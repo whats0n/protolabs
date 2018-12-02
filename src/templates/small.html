@@ -1,0 +1,14 @@
+---
+title: Small
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include 'partials/_header.html' %}
+	{% include 'partials/_hero-small.html' %}
+	<div class="cards-wrapper cards-wrapper_small">
+		{% include 'partials/_cards.html' %}
+	</div>
+
+{% endblock %}

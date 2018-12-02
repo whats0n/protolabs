@@ -1,0 +1,45 @@
+<!-- begin cards -->
+<div class="cards">
+	<div class="cards__inner">
+		<div class="cards__row">
+			{% for item in [
+				{
+					img: 'img/card-1.png',
+					title: 'WHITE PAPER',
+					description: 'Cras quis nulla commodo, aliquam lectus sed, blandit augue. <a href="#">Cras ullamcorper</a> bibendum bibendum. Duis tincidunt urna non pretiu.',
+					descriptionSM: 'Read the white paper on designing for moldability.'
+				},
+				{
+					classList: 'card_blue',
+					img: 'img/card-2.png',
+					title: 'YETI TUMBLER ',
+					description: 'Mauris non tempor quam, et lacinia sapien. Mauris <a href="#">accumsan eros</a> eget libero posuere vulputate. ',
+					descriptionSM: 'Get a tumbler by referring a colleague to Protolabs.'
+				},
+				{
+					img: 'img/card-3.png',
+					title: 'WEBINAR',
+					description: 'Nam <a href="#">porttitor blandit</a> accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod.',
+					descriptionSM: 'Watch out on-demand webianr on reducing making costs. '
+				}
+			] %}
+				<div class="cards__col">
+					<div class="card {{item.classList}}">
+						<div class="card__inner">
+							<div class="card__img" style="background-image: url({{item.img}});"></div>
+							<div class="card__content">
+								<div class="card__title">{{item.title}}</div>
+								<div class="card__description">
+									<p class="visible-desktop">{{item.description | safe}}</p>
+									<p class="visible-mobile">{{item.descriptionSM | safe}}</p>
+								</div>
+							</div>
+							<a href="#" class="btn btn_small btn_blue card__btn">CTA</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end cards -->

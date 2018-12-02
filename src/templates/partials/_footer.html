@@ -1,0 +1,42 @@
+<!-- begin footer -->
+<footer class="footer">
+	<div class="footer__inner">
+		<ul class="socials footer__socials">
+			{% for item in [
+				'facebook',
+				'linkedin',
+				'twitter',
+				'instagram',
+				'youtube'
+			] %}
+				<li class="socials__item">
+					<a href="#" class="socials__link">
+						{{mixins.icon(item, 'socials__icon')}}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+		<div class="footer__info">
+			<p class="footer__info-address">Proto Labs, Inc., 5540 Pioneer Creek Dr. Maple Plain, MN 55359 USA</p>
+			<ul class="footer__info-list">
+				<li class="footer__info-item">
+					<a href="tel:8774793680" class="footer__info-link footer__info-link_white">877-479-3680</a>
+				</li>
+				<li class="footer__info-item">
+					<a href="mailto:customerservice@protolabs.com" class="footer__info-link footer__info-link_white">customerservice@protolabs.com</a>
+				</li>
+				<li class="footer__info-item">
+					<a href="#" class="footer__info-link">unsubscribe</a>
+				</li>
+			</ul>
+		</div>
+		<a href="#" class="footer__logo">
+			<img src="img/logo-simple.svg" alt="Protolabs">
+		</a>
+		<div class="footer__copy">
+			<p>© Proto Labs 1999-2018</p>
+			<p>Proto Labs, Inc. is an Equal Opportunity Affirmative Action employer</p>
+		</div>
+	</div>
+</footer>
+<!-- end footer -->

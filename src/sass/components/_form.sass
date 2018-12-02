@@ -1,0 +1,98 @@
+.form
+	padding: 81px 20px 123px
+	background: url(../img/form-bg-1.svg) repeat center center #069ecd
+	+sm 
+		padding: 60px 0 93px
+	&_single
+		padding-top: 93px
+		padding-bottom: 209px
+		+sm
+			padding-top: 70px
+			padding-bottom: 79px
+		.form
+			&__container
+				max-width: 537px
+				+xs
+					max-width: none
+			&__body
+				padding: 51px 80px 73px
+				+xs
+					padding: 43px 33px 70px
+	&_multiple
+		.form
+			&__container
+				max-width: 901px
+				+sm
+					border-radius: 0
+			&__body
+				padding: 55px 52px 72px
+				+xs
+					padding: 38px 33px 58px
+			&__footer
+				margin-top: 60px
+				+sm
+					margin-top: 42px
+			&__btn
+				width: 50%
+				+sm 
+					width: 100%
+	&__container
+		margin: 0 auto
+		border-radius: 10px
+		background: rgba(53, 54, 65, 0.27123)
+		+xs
+			border-radius: 0
+	&__title
+		padding: 22px 20px 28px
+		border-radius: 10px
+		color: $white
+		background: #353641
+		font-family: ArialMT, Arial, sans-serif
+		font-size: 30px
+		font-weight: 700
+		line-height: 33px
+		text-align: center
+		text-transform: uppercase
+		+sm
+			padding: 28px 20px
+			border-radius: 0
+			font-size: 23px
+			line-height: 26px
+	&__field
+		&:not(:last-child)
+			margin-bottom: 20px
+	&__fields
+		display: flex
+		flex-wrap: wrap
+		margin: -10px -20px
+		.form__field
+			flex-grow: 1
+			padding: 10px 20px
+			margin: 0 !important
+			width: 100%
+			&_half
+				width: 50%
+				+sm
+					width: 100%
+		.form__fields
+			margin: -10px -9px
+			.form__field
+				padding: 10px 9px
+				&_half
+					+sm
+						width: 50%
+					+xs
+						width: 100%
+	&__label
+		display: block
+		margin-bottom: 12px
+		color: $white
+		font-family: Verdana
+		font-size: 18px
+		line-height: 22px
+	&__footer
+		margin-top: 42px
+		text-align: center
+	&__btn
+		+sm
+			max-width: 226px
