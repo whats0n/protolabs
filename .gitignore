@@ -23,6 +23,10 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+package.json
+README.md
+webpack.config.js
+gulpfile.js
 
 # Folders to ignore
 .sass-cache
@@ -30,3 +34,5 @@ nbproject
 _tmp
 node_modules
 bower_components
+src
+gulp
