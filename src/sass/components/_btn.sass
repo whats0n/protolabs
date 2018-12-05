@@ -5,6 +5,7 @@
 	font-family: Arial, sans-serif
 	font-weight: 700
 	text-align: center
+	text-decoration: none !important
 	&_small 
 		padding: 15px 21px 16px
 		font-size: 12px
@@ -14,6 +15,7 @@
 			padding: 11px 21px
 			font-family: ArialMT, Arial, sans-serif
 			font-size: 17px
+			font-weight: 400
 			line-height: 19px
 	&_medium
 		padding: 18px 21px 19px
@@ -42,13 +44,25 @@
 		color: #3A99C8
 		background-color: $white
 		background-image: linear-gradient(180deg, rgba(243, 243, 243, 0.00113225) 6.45%, rgba(53, 54, 65, 0.300442) 97.89%)
+		+hover
+			color: $white
+			background-color: #F57827
+			background-image: linear-gradient(180deg, rgba(245, 120, 39, 0.36297) 7.32%, #D85805 92.46%)
 	&_orange
 		color: $white
 		background-color: #F57827
 		background-image: linear-gradient(180deg, rgba(245, 120, 39, 0.36297) 7.32%, #D85805 92.46%)
+		+hover
+			color: #3A99C8
+			background-color: $white
+			background-image: linear-gradient(180deg, rgba(243, 243, 243, 0.00113225) 6.45%, rgba(53, 54, 65, 0.300442) 97.89%)
 	&_blue
 		color: $white
 		background-color: #3A99C8
 		background-image: linear-gradient(180deg, rgba(58, 153, 200, 0.386521) 33.9%, rgba(53, 54, 65, 0.480214) 100%)
+		+hover
+			color: #3A99C8
+			background-color: $white
+			background-image: linear-gradient(180deg, rgba(243, 243, 243, 0.00113225) 6.45%, rgba(53, 54, 65, 0.300442) 97.89%)
 	&_wide
 		width: 100%
