@@ -1,0 +1,55 @@
+<!-- begin form -->
+<div class="form form_single">
+	<div class="hero-triangle"></div>
+	<form action="/" class="form__container">
+		<div class="form__title">WATCH WEBINAR</div>
+		<div class="form__body">
+			{% for item in [
+				{ 
+					id: 'your-email',
+					label: 'Your Email*'
+				},
+				{ 
+					id: 'colleague-email',
+					label: 'Colleague Email*'
+				},
+				{ 
+					id: 'colleague-first-name',
+					label: 'Colleague First Name*'
+				},
+				{ 
+					id: 'colleague-last-name',
+					label: 'Colleague Last Name*'
+				},
+				{ 
+					id: 'colleague-company',
+					label: 'Colleague Company*'
+				},
+				{ 
+					id: 'select-a-country',
+					label: 'Select a Country*',
+					select: true
+				}
+			] %}
+				<div class="form__field">
+					<label for="{{item.id}}" class="form__label">{{item.label}}</label>
+					<div class="form__control">
+						{% if item.select %}
+							<select id="{{item.id}}" class="select form__select">
+								{% for option in range(0,10) %}
+									<option value="{{loop.index}}">Country {{loop.index}}</option>
+								{% endfor %}
+							</select>
+						{% else %}
+							<input type="text" class="input form__input" id="{{item.id}}">
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+			<div class="form__footer">
+				<button type="submit" class="btn btn_orange btn_large btn_wide form__btn">CTA</button>
+			</div>
+		</div>
+	</form>
+</div>
+<!-- end form -->
