@@ -7,7 +7,7 @@
 		padding-top: 93px
 		padding-bottom: 209px
 		+sm
-			padding-top: 70px
+			padding-top: 37px
 			padding-bottom: 79px
 		.form
 			&__container
@@ -96,3 +96,19 @@
 	&__btn
 		+sm
 			max-width: 226px
+
+.hero-triangle
+	position: relative
+	overflow: hidden
+	display: none
+	// margin: -37px -0px 37px
+	margin: -37px -0px 37px
+	+sm
+		display: block
+	&:before
+		content: ''
+		position: relative
+		left: 50%
+		display: block
+		+arr(900, 95, #151824, b)
+		transform: translateX(-50%)
