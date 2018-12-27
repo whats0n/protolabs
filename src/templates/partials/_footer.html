@@ -3,15 +3,30 @@
 	<div class="footer__inner">
 		<ul class="socials footer__socials">
 			{% for item in [
-				'facebook',
-				'linkedin',
-				'twitter',
-				'instagram',
-				'youtube'
+				{
+					href: 'https://www.facebook.com/Protolabs/',
+					text: 'facebook'
+				},
+				{
+					href: 'https://www.linkedin.com/company/proto-labs/',
+					text: 'linkedin'
+				},
+				{
+					href: 'https://twitter.com/ProtoLabs',
+					text: 'twitter'
+				},
+				{
+					href: 'https://www.instagram.com/protolabs/',
+					text: 'instagram'
+				},
+				{
+					href: 'https://www.youtube.com/user/ProtoLabsInc',
+					text: 'youtube'
+				}
 			] %}
 				<li class="socials__item">
-					<a href="#" class="socials__link">
-						{{mixins.icon(item, 'socials__icon')}}
+					<a href="{{item.href}}" target="_blank" class="socials__link">
+						{{mixins.icon(item.text, 'socials__icon')}}
 					</a>
 				</li>
 			{% endfor %}
@@ -26,7 +41,7 @@
 					<a href="mailto:customerservice@protolabs.com" class="footer__info-link footer__info-link_white">customerservice@protolabs.com</a>
 				</li>
 				<li class="footer__info-item">
-					<a href="#" class="footer__info-link">unsubscribe</a>
+					<a href="https://www.protolabs.com/resources/blog/" target="_blank" class="footer__info-link">unsubscribe</a>
 				</li>
 			</ul>
 		</div>
